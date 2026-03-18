@@ -1,6 +1,9 @@
-title: Designing Interfaces, Building Experiences.
-description: I've worked on a variety of projects, focusing on creating intuitive digital experiences where thoughtful design meets clean code. Here are some highlights I'm proud of, showcasing my process from concept to execution.
+title: Building Scalable Apps, Solving Real Problems
+description: I've worked on a wide range of mobile and full-stack projects, focusing on performance, scalability, and real-world impact. From fintech applications to cross-platform mobile apps and my own product initiatives, here are some highlights of my work.
 links:
   - label: "Let's talk"
     color: "neutral"
-  - label: 'Email me'
+    to: "#contact"
+
+  - label: "Email me"
+    to: "mailto:nuravesinamustari@gmail.com"

@@ -1,8 +1,8 @@
 export default defineAppConfig({
   global: {
     picture: {
-      dark: 'https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      light: 'https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      dark: 'https://res.cloudinary.com/dtfr5rwgo/image/upload/v1773812086/Gemini_Generated_Image_pu6povpu6povpu6p_kdjbku.png',
+      light: 'https://res.cloudinary.com/dtfr5rwgo/image/upload/v1773812086/Gemini_Generated_Image_pu6povpu6povpu6p_kdjbku.png',
       alt: 'My profile picture'
     },
     meetingLink: 'https://cal.com/',
@@ -27,19 +27,26 @@ export default defineAppConfig({
     colorMode: false,
     links: [{
       'icon': 'i-simple-icons-discord',
-      'to': 'https://go.nuxt.com/discord',
+      'to': 'https://discord.com/users/314369555906691073',
       'target': '_blank',
-      'aria-label': 'Nuxt on Discord'
+      'aria-label': 'Jadigaknih on Discord'
     }, {
-      'icon': 'i-simple-icons-x',
-      'to': 'https://go.nuxt.com/x',
+      'icon': 'i-simple-icons-googlechrome',
+      'to': 'https://aves.in',
       'target': '_blank',
-      'aria-label': 'Nuxt on X'
-    }, {
+      'aria-label': 'Another profile website'
+    }, 
+    {
+      'icon': 'i-simple-icons-linkedin',
+      'to': 'https://www.linkedin.com/in/nur-avesina-mustari-331b7685/',
+      'target': '_blank',
+      'aria-label': 'Avesina on linkedin'
+    },
+    {
       'icon': 'i-simple-icons-github',
-      'to': 'https://github.com/nuxt/ui',
+      'to': 'https://github.com/avesina',
       'target': '_blank',
-      'aria-label': 'Nuxt UI on GitHub'
+      'aria-label': 'Avesina on GitHub'
     }]
   }
 })

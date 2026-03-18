@@ -110,7 +110,7 @@ const formatDate = (dateString: string) => {
               @click="copyToClipboard(articleLink, 'Article link copied to clipboard')"
             />
           </div>
-          <UContentSurround :surround />
+          <UContentSurround   v-if="page.mode !== 'singlepage'" :surround />
         </UPageBody>
       </UPage>
     </UContainer>

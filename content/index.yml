@@ -1,120 +1,148 @@
 seo:
-  title: "Emma Thompson - UX/UI Designer"
-  description: "Welcome to my portfolio! I'm Emma Thompson, a UX/UI designer and front-end developer based in Boston. I specialize in creating user-centered digital experiences that are both beautiful and functional."
-title: "Hey, I'm Emma Thompson UX/UI Designer"
-description: "I craft intuitive digital experiences where design meets functionality. Based in Boston, bringing ideas to life through code and creativity."
+  title: "Nur Avesina Mustari — Senior Software Engineer"
+  description: "Portfolio of Nur Avesina Mustari, a senior software engineer with 9+ years of experience in mobile development, backend systems, DevOps, and cloud infrastructure."
+
+title: "Hi, I'm Nur Avesina Mustari"
+description: "Senior Software Engineer with 9+ years of experience building mobile and full-stack applications across Android, iOS, Flutter, React Native, and modern cloud infrastructure. Also the owner and builder of Jadigaknih.com, an application portal focused on experimenting with and launching digital products."
+
 hero:
   links:
-    - label: "Use this template"
-      to: https://github.com/nuxt-ui-templates/portfolio
+    - label: "Contact Me"
+      to: "mailto:nuravesinamustari@gmail.com"
+      color: "primary"
+    - label: "Download Resume"
+      to: "#about"
       color: "neutral"
-  images:
-    - src: /hero/random-1.avif
-      alt: Random Image 1
-    - src: /hero/random-2.avif
-      alt: Random Image 2
-    - src: /hero/random-3.avif
-      alt: Random Image 3
-    - src: /hero/random-4.avif
-      alt: Random Image 4
-    - src: /hero/random-5.avif
-      alt: Random Image 5
-    - src: /hero/random-6.avif
-      alt: Random Image 6
-    - src: /hero/random-7.avif
-      alt: Random Image 7
-    - src: /hero/random-8.avif
-      alt: Random Image 8
-    - src: /hero/random-9.avif
-      alt: Random Image 9
+
+  # images:
+  #   - src: /hero/mobile-dev.avif
+  #     alt: Mobile development
+  #   - src: /hero/android-dev.avif
+  #     alt: Android development
+  #   - src: /hero/ios-dev.avif
+  #     alt: iOS development
+  #   - src: /hero/cloud-dev.avif
+  #     alt: Cloud infrastructure
+  #   - src: /hero/devops.avif
+  #     alt: DevOps engineering
+  #   - src: /hero/backend.avif
+  #     alt: Backend development
+  #   - src: /hero/software-architecture.avif
+  #     alt: Software architecture
+  #   - src: /hero/engineering-team.avif
+  #     alt: Engineering leadership
+  #   - src: /hero/modern-stack.avif
+  #     alt: Modern development stack
+
 about:
   title: "About Me"
   description: |
-    As a UX/UI designer and front-end developer with 6 years of experience, I leverage my Boston University Interactive Design degree to craft user-centered digital experiences.
-    My approach blends creative strategy with technical expertise, transforming concepts into functional, purposeful digital products that seamlessly integrate design and technology.
+    I am a seasoned software engineer with more than 9 years of experience specializing in mobile development and scalable backend systems.
+
+    My core expertise includes Android development with Kotlin and Jetpack Compose, iOS development with Swift and Objective-C, and cross-platform frameworks such as Flutter and React Native.
+
+    I also work extensively with backend and full-stack technologies including Node.js, Laravel, Next.js, and Nest.js.
+
+    In addition to development, I have strong experience in DevOps, cloud infrastructure, and Agile engineering leadership. I have led engineering teams, improved system performance, optimized cloud costs, and delivered high-quality software solutions in fintech and enterprise environments.
+
 experience:
-  title: Work Experience
+  title: "Work Experience"
   items:
-    - position: "Brand Designer at"
-      date: "2023 - Present"
+    - position: "Android Lead (Maybank)"
+      date: "Aug 2025 - Feb 2026"
       company:
-        name: Nuxt
-        logo: "i-simple-icons-nuxtdotjs"
-        url: "https://nuxt.com"
-        color: "#00DC82"
-    - position: "Assets Designer at"
-      date: "2022 - 2023"
+        name: PT Ikonsultan Inovatama
+        logo: "i-simple-icons-android"
+        url: ""
+        color: "#3DDC84"
+
+    - position: "Mobile Developer | Lead / Manager | DevOps Engineer "
+      date: "Mar 2019 - Dec 2024"
       company:
-        name: Raycast
-        logo: "i-simple-icons-raycast"
-        url: "https://raycast.com"
-        color: "#FF6363"
-    - position: "Senior UX/UI Designer at"
-      date: "2020 - 2021"
+        name: KoinWorks
+        logo: "i-simple-icons-android"
+        url: "https://koinworks.com"
+        color: "#02569B"
+
+    - position: "Full-Stack Engineer"
+      date: "Feb 2017 - Mar 2019"
       company:
-        name: Linear
-        logo: "i-simple-icons-linear"
-        url: "https://linear.app"
-        color: "#5E6AD2"
+        name: JAVASIGN
+        logo: "i-simple-icons-react"
+        url: "https://www.linkedin.com/in/nur-avesina-mustari-331b7685/"
+        color: "#61DAFB"
+
+    - position: "Full-Stack Developer"
+      date: "Dec 2014 - Jan 2017"
+      company:
+        name: Indiva Finansia Teknologi
+        logo: "i-simple-icons-laravel"
+        url: "https://www.linkedin.com/in/nur-avesina-mustari-331b7685/"
+        color: "#FF2D20"
+
 testimonials:
-  - quote: "Emma's approach to UX design completely transformed our product. She has a rare ability to balance beautiful aesthetics with functional simplicity. The redesign not only looked better, but it reduced our customer support tickets by 40% and increased conversion rates across all key metrics."
+  - quote: "Avesina consistently delivers high-quality software solutions and demonstrates strong leadership in engineering teams."
     author:
-      name: 'Sarah Chen'
-      description: 'Product Director at Bloom Finance'
+      name: "Engineering Manager"
+      description: "Fintech Industry"
       avatar:
-        src: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
-        srcset: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
-  - quote: "Working with Emma was the best decision we made for our startup. She didn't just deliver designs—she challenged our assumptions, conducted thorough user research, and created an experience that truly resonated with our audience. Her technical knowledge of front-end development meant the handoff to our engineering team was seamless."
+        src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80"
+        srcset: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=160 2x"
+
+  - quote: "His expertise across mobile, backend, and DevOps makes him a rare engineer capable of solving complex technical challenges."
     author:
-      name: 'Michael Rodriguez'
-      description: 'Co-founder of Wavelength Music'
+      name: "Product Director"
+      description: "Technology Company"
       avatar:
-        src: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
-        srcset: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
-  - quote: "Emma stands out in her ability to translate complex sustainability data into intuitive interfaces. Her work on EcoTrack wasn't just visually stunning—it fundamentally changed how our users interact with environmental information. She approaches each problem with both creativity and analytical rigor, which is exactly what we needed."
+        src: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80"
+        srcset: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=160 2x"
+  - quote: "His expertise across mobile, backend, and DevOps makes him a rare engineer capable of solving complex technical challenges. He brings a true full-stack mindset and demonstrates the versatility of a jack of all trades, with the depth to execute at a high level."
     author:
-      name: 'Dr. Aisha Johnson'
-      description: 'Chief Innovation Officer at GreenTech Solutions'
+      name: "VP of Engineering"
+      description: "Technology Company"
       avatar:
-        src: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=40&h=40&q=80'
-        srcset: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=80&h=80&q=80 2x'
-blog:
-  title: "Latest Articles"
-  description: "Some of my recent thoughts"
+        src: "https://avatars.githubusercontent.com/u/5358104?v=4"
+        srcset: "https://avatars.githubusercontent.com/u/5358104?v=4 2x"
+
+# blog:
+#   title: "Engineering Articles"
+#   description: "Thoughts about mobile development, system architecture, and DevOps engineering."
+
 faq:
-  title: Frequently Asked Questions
-  description: Answers to common questions about my process and services.
+  title: "Frequently Asked Questions"
+  description: "Answers about my technical expertise and engineering background."
+
   categories:
-    - title: Services & Process
+    - title: "Technical Expertise"
       questions:
-        - label: What services do you offer?
+        - label: "What technologies do you specialize in?"
+          content: I specialize in mobile development including Android (Kotlin, Jetpack Compose), iOS (Swift, Objective-C), Flutter, and React Native. I also work with backend systems using Node.js, Laravel, Next.js, and Nest.js.
+
+        - label: "Do you have DevOps experience?"
           content: |
-            I specialize in UX/UI design and front-end development. This includes user research, wireframing, interactive prototyping, creating intuitive user interfaces, building responsive websites and web applications (especially with Vue.js/Nuxt.js), and developing design systems. My goal is to create seamless digital experiences from concept to deployment.
-        - label: What is your design process like?
+            Yes. I have built CI/CD pipelines using GitLab CI, managed Kubernetes clusters, and optimized cloud infrastructure on AWS and GCP.
+
+        - label: "Do you lead engineering teams?"
           content: |
-            My process is collaborative and iterative, typically involving stages like Discovery & Research, Ideation & Prototyping, User Testing, Visual Design, and close collaboration with development teams during implementation. I tailor the process based on project needs, always focusing on user-centered solutions.
-        - label: Do you work with startups?
-          content: |
-            Absolutely! I enjoy working with startups to help shape their product vision and create user-friendly interfaces from the ground up. I can adapt my process to fit the fast-paced startup environment.
-    - title: Pricing & Timelines
+            Yes. I have experience leading teams of engineers, mentoring developers, conducting code reviews, and coordinating with product managers.
+
+    - title: "Projects"
       questions:
-        - label: How much does a project typically cost?
+        - label: "What industries have you worked in?"
           content: |
-            Project costs vary based on scope, complexity, features, and timeline. For comprehensive UX/UI design and front-end development projects, my engagements typically start around $5,000, with average projects ranging between $8,000 and $25,000. For consulting or specific design tasks, my day rate is $700.
-        - label: What are your payment terms?
+            Most of my work has been in fintech, mobile platforms, and enterprise software systems.
+
+        - label: "What are your biggest technical achievements?"
           content: |
-            I generally require a 40% deposit to schedule the project and begin work, with the remaining 60% due upon successful project completion and delivery. I accept payments via bank transfer and Stripe.
-        - label: How long does a typical project take?
-          content: |
-            Timelines depend heavily on the project's scope and complexity. Smaller projects might take 3-4 weeks, while larger, more involved projects can range from 2 to 4 months. I always provide a detailed timeline estimate after the initial discovery phase.
-        - label: Do you offer retainers or ongoing support?
-          content: |
-            Yes, for clients needing ongoing design support, feature development, or maintenance, I offer monthly retainer options tailored to specific needs. Let's discuss if this is something you're interested in.
-    - title: About Me
-      questions:
-        - label: What do you enjoy most about your work?
-          content: |
-            I love the challenge of solving complex problems through design and technology. It's incredibly rewarding to see people interact with something I've created and find it genuinely useful and easy to navigate. Bridging the gap between user needs and technical possibilities is what truly excites me.
-        - label: What are your hobbies outside of work?
-          content: |
-            When I'm not designing or coding, I enjoy exploring Boston's neighborhoods, trying out new coffee shops, and hiking in the nearby reservations. I'm also passionate about photography and occasionally contribute to open-source projects.
+            Leading engineering teams, building scalable mobile architectures, optimizing cloud infrastructure costs, and delivering complex mobile applications used by large user bases.
+
+contact:
+  title: "Get In Touch"
+  description: "Interested in working together or discussing engineering opportunities? Feel free to reach out."
+
+  links:
+    - label: "Email"
+      to: "mailto:nuravesinamustari@gmail.com"
+
+    - label: "Phone"
+      to: "tel:+6285959345673"
