@@ -1,7 +1,10 @@
 [build.environment]
   NODE_VERSION = "20"
+  NODE_VERSION = "20"
+  NODE_OPTIONS = "--max-old-space-size=4096"
+  NITRO_PRESET = "netlify"
 [build]
-  command = "pnpm build"
+  command = "corepack enable && pnpm install --frozen-lockfile && pnpm build"
   publish = ".output/public"
 
 [functions]
