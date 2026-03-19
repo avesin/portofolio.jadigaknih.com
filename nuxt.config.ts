@@ -18,13 +18,22 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2024-11-01',
 
-  nitro: {
-    preset: 'netlify',
-    prerender: {
-      crawlLinks: true,
-    }
+  // nitro: {
+  //   prerender: {
+  //     routes: [
+  //       '/'
+  //     ],
+  //     crawlLinks: true
+  //   }
+  // },
+  // routeRules: {
+  //   '/**': { ssr: true }
+  // },
+  nitro: { preset: 'netlify', static: false, prerender: { routes: ['/'], crawlLinks: false } },
+  
+  image: {
+    domains: ['res.cloudinary.com']
   },
-
   eslint: {
     config: {
       stylistic: {
