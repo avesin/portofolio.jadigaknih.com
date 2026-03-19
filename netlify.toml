@@ -1,9 +1,10 @@
 [build.environment]
-  NODE_VERSION = "20"
+  NODE_VERSION = "25"
+   PNPM_VERSION = "10"
   NODE_OPTIONS = "--max_old_space_size=4096"
   
 [build]
-  command = "pnpm build"
+  command = "pnpm install && pnpm build"
   publish = ".output/public"
 
 [functions]

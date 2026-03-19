@@ -90,6 +90,7 @@ export default defineContentConfig({
       source: 'blog/*.md',
       schema: z.object({
         minRead: z.number(),
+        mode: z.enum(['singlepage', 'with-surroundings']),
         date: z.date(),
         image: z.string().nonempty().editor({ input: 'media' }),
         author: createAuthorSchema()
