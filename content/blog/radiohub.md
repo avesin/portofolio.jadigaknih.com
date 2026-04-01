@@ -115,4 +115,6 @@ RadioApp is a work in progress, but it demonstrates the power of Flutter for cro
 
 **GitHub Repository:** [https://github.com/avesin/radiohub](https://github.com/avesin/radiohub)
 
+**[Download RadioHub on the Google Play Store today](https://play.google.com/store/apps/details?id=com.jadigaknih.radio.radioapp)** and start listen radio from everywhere to everywhere
+
 *Follow the project on GitHub and feel free to contribute or provide feedback!*
