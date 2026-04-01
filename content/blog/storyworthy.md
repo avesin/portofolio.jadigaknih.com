@@ -2,7 +2,7 @@
 title: "Finding the Magic in the Mundane: How the 'Storyworthy' App Brings "Homework for Life" to Your Phone"
 description: Storyworthy is an Android application designed to help users capture and organize daily "storyworthy" moments. Inspired by the practice of Homework for Life, it provides a simple and elegant interface to record the small, meaningful events of each day.
 date: 2026-03-18
-image: https://res.cloudinary.com/dtfr5rwgo/image/upload/v1775035990/Screenshot_2026-04-01_at_16.32.59_gar1cz.png
+image: https://res.cloudinary.com/dtfr5rwgo/image/upload/v1773820381/playstore_qcowaw.png
 minRead: 8
 mode: singlepage
 author:
