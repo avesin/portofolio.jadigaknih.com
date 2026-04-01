@@ -1,20 +1,22 @@
 id: storyworthy
 title: Storyworthy — Homework for Life App
 description: Storyworthy is an Android application designed to help users capture and organize daily "storyworthy" moments. Inspired by the practice of Homework for Life, it provides a simple and elegant interface to record the small, meaningful events of each day.
-image: https://res.cloudinary.com/dtfr5rwgo/image/upload/v1773812095/Screenshot_20260312_100835_a8kuwr.png
-images:
-  - src: /images/storyworthy-1.png
-    alt: Calendar view with emotion tracking
+image: https://res.cloudinary.com/dtfr5rwgo/image/upload/v1775035990/Screenshot_2026-04-01_at_16.32.59_gar1cz.png
 
-  - src: /images/storyworthy-2.png
-    alt: Story input and journaling interface
-
-url: "https://github.com/avesin/project-storyworthy"
+url: "/blog/storyworthy"
 
 tags:
   - Mobile Development
   - Product Engineering
   - UX/UI
   - Personal Project
+  - Android
+  - Storyworthy
+  - Homework for Life
+  - Daily Journaling
+  - Emotion Tracking
+  - Storytelling
+  - Memory Keeping
+  - Personal Growth
 
-date: "2026"
+date: "2026-03-12"

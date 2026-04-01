@@ -2,7 +2,7 @@
 title: Ailu — A Modern Multi-AI Mobile Chat App Built with React Native
 description: Artificial Intelligence tools are evolving rapidly. Developers and AI enthusiasts often switch between multiple AI providers like OpenAI, Gemini, and self-hosted models. This fragmented experience creates friction and slows productivity.
 date: 2026-04-01
-image: https://res.cloudinary.com/dtfr5rwgo/image/upload/v1774853392/Screenshot_2026-03-30_at_13.49.16_xiux0a.png
+image: https://res.cloudinary.com/dtfr5rwgo/image/upload/v1775035990/Screenshot_2026-04-01_at_16.32.59_gar1cz.png
 minRead: 8
 mode: singlepage
 author:
