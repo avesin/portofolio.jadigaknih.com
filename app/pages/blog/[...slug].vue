@@ -118,14 +118,11 @@ const formatDate = (dateString: string) => {
         </div>
         <UPageBody class="max-w-3xl mx-auto">
           <ContentRenderer v-if="page.body" :value="page.body" />
-          <!-- <Markdown :value="page.body" /> -->
-          <!-- <div v-if="page.body" v-html="html" class="prose prose-neutral max-w-none mt-8" /> -->
 
           <div class="flex items-center justify-end gap-2 text-sm text-muted">
             <UButton size="sm" variant="link" color="neutral" label="Copy link"
               @click="copyToClipboard(articleLink, 'Article link copied to clipboard')" />
           </div>
-          <!-- <UContentSurround   v-show="page.mode !== 'singlepage'" :surround /> -->
           <UContentSurround :surround="surroundData" />
         </UPageBody>
       </UPage>

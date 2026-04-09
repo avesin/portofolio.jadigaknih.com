@@ -1,3 +1,4 @@
+import { avatar } from '#build/ui'
 import { useState, useRuntimeConfig } from '#imports'
 import type { ParsedContentv2 } from '@nuxt/content'
 
@@ -81,7 +82,9 @@ export function useProjectsRepository() {
       const assets = res.includes?.Asset || []
       const item = (res.items || [])[0]
       const imageId = item.fields.image?.sys?.id
+      const profileId = item.fields.profile?.sys?.id
       const asset = assets.find((a: any) => a.sys.id === imageId)
+      const profileAsset = assets.find((a: any) => a.sys.id === profileId)
       var body = null
       if (item.fields.body) {
         body = await parseMarkdown(item.fields.body);
@@ -92,7 +95,13 @@ export function useProjectsRepository() {
         url: item.fields.link,
         date: item.fields.date,
         body: body,
-        author: item.fields.author,
+        author: {
+          name: item.fields.author,
+          avatar: {
+            alt: item.fields.author,
+            src: profileAsset ? 'https:' + profileAsset.fields.file.url : null
+          }
+        },
         minRead: body ? calculateMinRead(item.fields.body + " " + item.fields.description) : 0,
         image: asset ? 'https:' + asset.fields.file.url : null
       }

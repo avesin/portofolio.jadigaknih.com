@@ -1,11 +1,11 @@
 export default defineAppConfig({
   global: {
     picture: {
-      dark: 'https://res.cloudinary.com/dtfr5rwgo/image/upload/v1773812086/Gemini_Generated_Image_pu6povpu6povpu6p_kdjbku.png',
-      light: 'https://res.cloudinary.com/dtfr5rwgo/image/upload/v1773812086/Gemini_Generated_Image_pu6povpu6povpu6p_kdjbku.png',
+      dark: 'https://images.ctfassets.net/0krlnipf2sxy/3VB7b9fXkg1eDs1YDoFrps/2642bc447eed95d83fe187752fa32181/Gemini_Generated_Image_pu6povpu6povpu6p_kdjbku.png',
+      light: 'https://images.ctfassets.net/0krlnipf2sxy/3VB7b9fXkg1eDs1YDoFrps/2642bc447eed95d83fe187752fa32181/Gemini_Generated_Image_pu6povpu6povpu6p_kdjbku.png',
       alt: 'My profile picture'
     },
-    meetingLink: 'https://cal.com/',
+    meetingLink: 'https://calendar.app.google/3QYnSyXYdfiuNaXi9',
     email: 'ui-pro@nuxt.com',
     available: true
   },
