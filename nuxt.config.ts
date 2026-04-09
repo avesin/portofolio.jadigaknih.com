@@ -9,28 +9,12 @@ export default defineNuxtConfig({
     'nuxt-og-image',
     'motion-v/nuxt'
   ],
-
   devtools: {
     enabled: true
   },
-
   css: ['~/assets/css/main.css'],
-
   compatibilityDate: '2024-11-01',
-
-  // nitro: {
-  //   prerender: {
-  //     routes: [
-  //       '/'
-  //     ],
-  //     crawlLinks: true
-  //   }
-  // },
-  // routeRules: {
-  //   '/**': { ssr: true }
-  // },
   nitro: { preset: 'netlify', static: false, prerender: { routes: ['/'], crawlLinks: false } },
-  
   image: {
     domains: ['res.cloudinary.com']
   },
@@ -41,5 +25,11 @@ export default defineNuxtConfig({
         braceStyle: '1tbs'
       }
     }
-  }
+  },
+  runtimeConfig: {
+    public: {
+      projectId: process.env.NUXT_PUBLIC_PROJECT_ID,
+      accessToken: process.env.NUXT_PUBLIC_ACCESS_TOKEN
+    },
+  },
 })

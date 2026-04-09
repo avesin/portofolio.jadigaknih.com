@@ -14,7 +14,6 @@ const items = computed(() => {
       questions: faq.questions
     }
   })
-  console.log('faqs', faqs)
   return faqs
 })
 

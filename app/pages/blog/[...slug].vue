@@ -2,25 +2,34 @@
 import type { ContentNavigationItem } from '@nuxt/content'
 import { mapContentNavigation } from '@nuxt/ui/utils/content'
 import { findPageBreadcrumb } from '@nuxt/content/utils'
+import { useProjectsRepository } from '@/utils/repository'
+
 
 const route = useRoute()
+const { page, fetchBlogBySlug, fetchSurround } = useProjectsRepository()
+const surroundData = ref<any[]>([null, null])
+const slug = computed(() => {
+  const s = route.params.slug
+  return Array.isArray(s) ? s[0] : (s || route.path.replace('/blog/', ''))
+})
 
-const { data: page } = await useAsyncData(route.path, () =>
-  queryCollection('blog').path(route.path).first()
-)
-if (!page.value) throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
-const { data: surround } = await useAsyncData(`${route.path}-surround`, () =>
-  queryCollectionItemSurroundings('blog', route.path, {
-    fields: ['description']
-  })
-)
+watch(slug, async (newSlug) => {
+  if (newSlug) {
+    await fetchBlogBySlug(newSlug)
+  }
+  if (page.value.date) {
+    surroundData.value = await fetchSurround(page.value.date)
+  }
+}, { immediate: true })
+
+
+// if (!page || !page.value) throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 
 const navigation = inject<Ref<ContentNavigationItem[]>>('navigation', ref([]))
 const blogNavigation = computed(() => navigation.value.find(item => item.path === '/blog')?.children || [])
-
 const breadcrumb = computed(() => mapContentNavigation(findPageBreadcrumb(blogNavigation?.value, page.value?.path)).map(({ icon, ...link }) => link))
 
-if (page.value.image) {
+if (page && page.value && page.value.image) {
   defineOgImage({ url: page.value.image })
 } else {
   defineOgImageComponent('Blog', {
@@ -55,10 +64,7 @@ const formatDate = (dateString: string) => {
   <UMain class="mt-20 px-2">
     <UContainer class="relative min-h-screen">
       <UPage v-if="page">
-        <ULink
-          to="/blog"
-          class="text-sm flex items-center gap-1"
-        >
+        <ULink to="/blog" class="text-sm flex items-center gap-1">
           <UIcon name="lucide:chevron-left" />
           Blog
         </ULink>
@@ -74,11 +80,7 @@ const formatDate = (dateString: string) => {
               {{ page.minRead }} MIN READ
             </span>
           </div>
-          <NuxtImg
-            :src="page.image"
-            :alt="page.title"
-            class="rounded-lg w-full h-[300px] object-cover object-center"
-          />
+          <NuxtImg :src="page.image" :alt="page.title" class="rounded-lg w-full h-[300px] object-cover object-center" />
           <h1 class="text-4xl text-center font-medium max-w-3xl mx-auto mt-4">
             {{ page.title }}
           </h1>
@@ -86,32 +88,21 @@ const formatDate = (dateString: string) => {
             {{ page.description }}
           </p>
           <div class="flex items-center justify-center gap-2 mt-2">
-            <UUser
-              orientation="vertical"
-              color="neutral"
-              variant="outline"
-              class="justify-center items-center text-center"
-              v-bind="page.author"
-            />
+            <UUser orientation="vertical" color="neutral" variant="outline"
+              class="justify-center items-center text-center" v-bind="page.author" />
           </div>
         </div>
         <UPageBody class="max-w-3xl mx-auto">
-          <ContentRenderer
-            v-if="page.body"
-            :value="page"
-          />
+          <ContentRenderer v-if="page.body" :value="page.body" />
+          <!-- <Markdown :value="page.body" /> -->
+           <!-- <div v-if="page.body" v-html="html" class="prose prose-neutral max-w-none mt-8" /> -->
 
           <div class="flex items-center justify-end gap-2 text-sm text-muted">
-            <UButton
-              size="sm"
-              variant="link"
-              color="neutral"
-              label="Copy link"
-              @click="copyToClipboard(articleLink, 'Article link copied to clipboard')"
-            />
+            <UButton size="sm" variant="link" color="neutral" label="Copy link"
+              @click="copyToClipboard(articleLink, 'Article link copied to clipboard')" />
           </div>
           <!-- <UContentSurround   v-show="page.mode !== 'singlepage'" :surround /> -->
-          <UContentSurround :surround />
+          <UContentSurround :surround="surroundData" />
         </UPageBody>
       </UPage>
     </UContainer>
