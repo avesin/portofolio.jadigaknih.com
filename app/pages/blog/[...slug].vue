@@ -12,11 +12,22 @@ const slug = computed(() => {
   const s = route.params.slug
   return Array.isArray(s) ? s[0] : (s || route.path.replace('/blog/', ''))
 })
+const pending = ref(false) // State loading baru
 
 watch(slug, async (newSlug) => {
-  if (newSlug) {
+  if (!newSlug) return;
+  page.value = null
+  surroundData.value = [null, null]
+  try {
+    pending.value = true; // Set loading saat mulai fetch
     await fetchBlogBySlug(newSlug)
+    if (page.value?.date) {
+      surroundData.value = await fetchSurround(page.value.date)
+    }
+  } finally {
+    pending.value = false; // Reset loading setelah selesai
   }
+  await fetchBlogBySlug(newSlug)
   if (page.value.date) {
     surroundData.value = await fetchSurround(page.value.date)
   }
@@ -63,6 +74,19 @@ const formatDate = (dateString: string) => {
 <template>
   <UMain class="mt-20 px-2">
     <UContainer class="relative min-h-screen">
+      <div v-if="pending" class="flex flex-col gap-6 mt-8">
+        <USkeleton class="h-4 w-[100px]" />
+        <div class="space-y-4 flex flex-col items-center">
+          <USkeleton class="h-4 w-[150px]" />
+          <USkeleton class="h-[300px] w-full rounded-lg" />
+          <USkeleton class="h-10 w-[80%] mt-4" />
+          <USkeleton class="h-4 w-[60%]" />
+          <USkeleton class="h-12 w-12 rounded-full mt-2" />
+        </div>
+        <div class="max-w-3xl mx-auto w-full space-y-2 mt-8">
+          <USkeleton class="h-4 w-full" v-for="i in 10" :key="i" />
+        </div>
+      </div>
       <UPage v-if="page">
         <ULink to="/blog" class="text-sm flex items-center gap-1">
           <UIcon name="lucide:chevron-left" />
@@ -95,7 +119,7 @@ const formatDate = (dateString: string) => {
         <UPageBody class="max-w-3xl mx-auto">
           <ContentRenderer v-if="page.body" :value="page.body" />
           <!-- <Markdown :value="page.body" /> -->
-           <!-- <div v-if="page.body" v-html="html" class="prose prose-neutral max-w-none mt-8" /> -->
+          <!-- <div v-if="page.body" v-html="html" class="prose prose-neutral max-w-none mt-8" /> -->
 
           <div class="flex items-center justify-end gap-2 text-sm text-muted">
             <UButton size="sm" variant="link" color="neutral" label="Copy link"
