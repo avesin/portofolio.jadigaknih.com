@@ -10,3 +10,6 @@
   
 [build.processing]
   skip_processing = true
+
+[images]
+  remote_images = ["https://images.ctfassets.net/.*"]
