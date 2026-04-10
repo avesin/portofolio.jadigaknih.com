@@ -39,8 +39,11 @@ content: |
   Thanks for visiting my portfolio. Feel free to explore my [projects](/projects) or [get in touch](/#contact) if you'd like to collaborate!
 
 images:
-  - src: https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1587&auto=format&fit=crop
-    alt: Coding workspace
+  - src: https://images.ctfassets.net/0krlnipf2sxy/6UNbBvKpVgjMkFezsWusbM/bd1967aef03d4ba4d8b9ecdd2a6877ee/ailu.webp
+    alt: Ailu
 
-  - src: https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1587&auto=format&fit=crop
-    alt: Software development environment
+  - src: https://images.ctfassets.net/0krlnipf2sxy/3TrLQP6PWDDhuUeMwqLSFq/ba7ac63e2b1bd2a503773ef31b641cd6/Screenshot_2026-03-30_at_13.49.16_xiux0a.png
+    alt: RadioHub
+
+  - src: https://images.ctfassets.net/0krlnipf2sxy/4zdzLNPJXqNzfCRxZSY6nN/d272c39d47ddf17f838c0bc958cd95dd/images.webp
+    alt: Storyworthy

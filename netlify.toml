@@ -12,4 +12,4 @@
   skip_processing = true
 
 [images]
-  remote_images = ["https://images.ctfassets.net/.*"]
+  remote_images = ["https://images.ctfassets.net/.*", "https://images.ctfassets.net/.*"]
