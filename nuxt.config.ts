@@ -16,7 +16,16 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   nitro: { preset: 'netlify', static: false, prerender: { routes: ['/'], crawlLinks: false } },
   image: {
-    domains: ['res.cloudinary.com']
+    domains: ['res.cloudinary.com','images.ctfassets.net'],
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+    },
+    densities: [1, 2], 
+    quality: 90,
   },
   eslint: {
     config: {
