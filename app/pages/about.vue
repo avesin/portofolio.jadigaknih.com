@@ -34,7 +34,7 @@ useSeoMeta({
       }"
     >
       <UColorModeAvatar
-        class="sm:rotate-4 size-80 rounded-lg ring ring-default ring-offset-3 ring-offset-(--ui-bg)"
+        class="sm:rotate-4 size-32 rounded-lg ring ring-default ring-offset-3 ring-offset-(--ui-bg)"
         :light="global.picture?.light!"
         :dark="global.picture?.dark!"
         :alt="global.picture?.alt!"
