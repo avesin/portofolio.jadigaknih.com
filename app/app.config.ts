@@ -23,7 +23,7 @@ export default defineAppConfig({
     }
   },
   footer: {
-    credits: `Built with Nuxt UI • © ${new Date().getFullYear()}`,
+    credits: `Jadigakbih. All Rights Reserved. • © ${new Date().getFullYear()}`,
     colorMode: false,
     links: [{
       'icon': 'i-simple-icons-discord',
@@ -35,7 +35,7 @@ export default defineAppConfig({
       'to': 'https://aves.in',
       'target': '_blank',
       'aria-label': 'Another profile website'
-    }, 
+    },
     {
       'icon': 'i-simple-icons-linkedin',
       'to': 'https://www.linkedin.com/in/nur-avesina-mustari-331b7685/',
@@ -47,6 +47,24 @@ export default defineAppConfig({
       'to': 'https://github.com/avesina',
       'target': '_blank',
       'aria-label': 'Avesina on GitHub'
+    },
+    {
+      'icon': 'i-material-symbols-format-ink-highlighter',
+      'to': 'https://jadigaknih.com/contact',
+      'target': '_blank',
+      'aria-label': 'Contact Us'
+    },
+    {
+      'icon': 'i-heroicons-shield-check-solid',
+      'to': 'https://jadigaknih.com/blog/privacy-policy',
+      'target': '_blank',
+      'aria-label': 'Privacy Policy'
+    },
+    {
+      'icon': 'i-heroicons-exclamation-triangle-solid',
+      'to': 'https://jadigaknih.com/blog/disclaimer',
+      'target': '_blank',
+      'aria-label': 'Disclaimer'
     }]
   }
 })
