@@ -131,7 +131,7 @@ defineProps<{
 
       <div class="gap-x-4 inline-flex mt-4">
         <Motion
-          v-for="(link, index) of footer?.links"
+          v-for="(link, index) of footer?.links.slice(0, 4)"
           :key="index"
 
           :initial="{

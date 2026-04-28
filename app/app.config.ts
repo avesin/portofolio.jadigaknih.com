@@ -52,18 +52,21 @@ export default defineAppConfig({
       'icon': 'i-material-symbols-format-ink-highlighter',
       'to': 'https://jadigaknih.com/contact',
       'target': '_blank',
+      'label': 'Contact Us',
       'aria-label': 'Contact Us'
     },
     {
       'icon': 'i-heroicons-shield-check-solid',
       'to': 'https://jadigaknih.com/blog/privacy-policy',
       'target': '_blank',
+      'label': 'Privacy Policy',
       'aria-label': 'Privacy Policy'
     },
     {
       'icon': 'i-heroicons-exclamation-triangle-solid',
       'to': 'https://jadigaknih.com/blog/disclaimer',
       'target': '_blank',
+      'label': 'Disclaimer',
       'aria-label': 'Disclaimer'
     }]
   }
